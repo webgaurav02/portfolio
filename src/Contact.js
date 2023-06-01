@@ -4,11 +4,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function About() {
+function Contact() {
 
   return <>
-    <h1>This is About Section</h1>
+    <h1>This is Contact Section</h1>
   </>;
 }
 
-export default About;
+export default Contact;

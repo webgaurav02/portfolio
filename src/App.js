@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Home from "./Home";
-import About from "./About";
+import Content from "./Content";
+
 
 
 function App() {
+
   return(
-    <div>
-      <Home />
-      <About />
-    </div>
+    <>
+      <Content />
+    </>
   )  
 }
  
