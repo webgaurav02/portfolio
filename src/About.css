@@ -1,0 +1,75 @@
+.about {
+  text-align: left;
+  padding: 10%;
+  margin: 0;
+  background-color: black;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.87),
+      rgba(0, 0, 0, 0.87)
+    ),
+    linear-gradient(-45deg, #ee7752, #e73c7e, #1378d7, #37a5dc);
+  backdrop-filter: blur(10);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  color: white;
+  overflow: hidden;
+}
+
+.about h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about h1:hover {
+    color: white;
+}
+
+.about h2 {
+  font-weight: 200;
+}
+
+.about p {
+    color: white;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  font-weight: 240;
+  width: 40%;
+  line-height: 2.5rem;
+}
+
+.a-big {
+    text-decoration: none;
+  color: #ff7e39;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4rem;
+
+}
+
+.a-big:hover {
+  color: #7553fe;
+}
+
+h1.code-logo {
+    margin-right: 20px;
+    font-size: 400px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 250px;
+    right: 110px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
