@@ -1,15 +1,18 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import LoadingScreen from "./LoadingScreen";
+import "./App.css";
 import Content from "./Content";
 
+function App(){
+  const [isLoading, setIsLoading] = useState(true);
 
-function App() {
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
 
-  return(
-    <>
-      <Content />
-    </>
-  )  
+  return <>{isLoading ? <LoadingScreen /> : <Content />}</>;
 }
- 
+
 export default App;
