@@ -50,6 +50,7 @@ function Footer() {
           </ul>
         </Col>
       </Row>
+      <hr className="copy-right"/>
       <p>
         <i className="fa-regular fa-copyright fa-2xs" /> 2023 Gaurav Joshi
       </p>

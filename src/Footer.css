@@ -45,9 +45,16 @@
     margin: 0 auto;
     text-align: left;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .footer p{
     font-size: 1rem;
+}
+
+.copy-right {
+    width: 100vw;
+    transform: translateX(-10%);
+    border-radius: 0.5px;
+    border-top: 1px solid white;
 }
