@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import profilePhoto from "./images/Gaurav_3.png";
+import Footer from "./Footer";
 
 function Home() {
 
@@ -19,7 +20,7 @@ function Home() {
       <Container fluid className="home" id="home">
         <div>
           <Row>
-            <Col xs={6} className="head fade-in">
+            <Col lg={6} className="head fade-in">
               <h3>Hi there, I'm</h3>
               <div>
                 <h1>Gaurav Joshi</h1>
@@ -33,7 +34,7 @@ function Home() {
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i className="fa-brands fa-linkedin-in"></i>
                 </a>
                 <a
                   href="https://github.com/webgaurav02"
@@ -41,7 +42,7 @@ function Home() {
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/gaur_.av/"
@@ -63,6 +64,7 @@ function Home() {
           </Row>
         </div>
       </Container>
+      <Footer />
     </>
   );
 }

@@ -9,23 +9,22 @@
       rgba(0, 0, 0, 0.87)
     ),
     linear-gradient(-45deg, #ee7752, #e73c7e, #1378d7, #37a5dc);
-  backdrop-filter: blur(10);
+  backdrop-filter: blur(100);
   background-size: 400% 400%;
-  animation: gradient 7s ease infinite;
+  animation: gradient 6s ease infinite;
   color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .about h1 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
   font-weight: 600;
 }
 
-.about h1:hover {
-    color: white;
-}
 
 .about h2 {
   font-weight: 200;
@@ -58,7 +57,7 @@ h1.code-logo {
     font-size: 400px;
     font-weight: 500;
     position: absolute;
-    bottom: 250px;
+    bottom: 35vh;
     right: 110px;
 }
 

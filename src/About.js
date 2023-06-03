@@ -1,25 +1,65 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./About.css";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Footer from "./Footer";
 
 const disp = "</>"
 
 function About() {
+  const aboutRef = useRef(null);
+  useEffect(() => {
+    const aboutElement = aboutRef.current;
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 1, // Adjust this threshold value as per your needs
+    };
+
+    const handleIntersection = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in-animation");
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+    const elements = aboutElement.querySelectorAll(".fade-in");
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
-      <Container fluid className="about" id="about">
-          <h1>I'm Gaurav.</h1>
-          <h2>
-            Welcome to my portfolio website! I'm a <a className="a-big">Student</a> at the National
-            Institute of Technology Meghalaya and a <a className="a-big">Web Developer.</a>
-          </h2>
-          <p>I rock at HTML, CSS, and JavaScript, and I'm not too shabby with React.js either.</p>
-          <p>Oh, and did I mention I dabble in <a className="a-big">graphic design</a> too?</p>
-          <p>Take a peek at my portfolio and see the magic I can create with a mix of creativity and coding skills. Let's make something awesome together!</p>
-          <h1 className="code-logo">{disp}</h1>
+      <Container fluid className="about" id="about" ref={aboutRef}>
+        <h1 className="fade-in">I'm Gaurav.</h1>
+        <h2 className="fade-in">
+          Welcome to my portfolio website! I'm a{" "}
+          <a className="a-big fade-in">Student</a> at the National Institute of
+          Technology Meghalaya and a <a className="a-big fade-in">Web Developer.</a>
+        </h2>
+        <p className="fade-in">
+          I rock at HTML, CSS, and JavaScript, and I'm not too shabby with
+          React.js either.
+        </p>
+        <p className="fade-in">
+          Oh, and did I mention I dabble in{" "}
+          <a className="a-big fade-in">graphic design</a> too?
+        </p>
+        <p className="fade-in">
+          Take a peek at my portfolio and see the magic I can create with a mix
+          of creativity and coding skills. Let's make something awesome
+          together!
+        </p>
+        <h1 className="code-logo fade-in">{disp}</h1>
       </Container>
+      <Footer />
     </>
   );
 }

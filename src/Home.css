@@ -37,7 +37,7 @@
   border: none;
   width: 21.25rem;
   height: 5px;
-  background: linear-gradient(-45deg, #e352ff, #000bd7, #00ffda);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #1378d7, #37a5dc);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
   opacity: 1;
@@ -72,7 +72,7 @@ h1 {
 
 h1:hover {
   color: transparent;
-  background: linear-gradient(-45deg, #e352ff, #000bd7, #00ffda);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #1378d7, #37a5dc);
   background-size: 400% 400%;
   background-clip: text;
   animation: gradient 8s ease infinite;
@@ -145,7 +145,7 @@ a {
 
 .fade-in-animation {
   opacity: 1;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -156,6 +156,8 @@ a {
     opacity: 1;
   }
 }
+
+
 
 .slide-in-left {
   animation: slide-in-left 1.5s ease-in-out;

@@ -1,14 +1,24 @@
 import React, { useEffect } from "react";
-import "./App.css";
+import "./Work.css";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Footer from "./Footer"
 
 function Work() {
-
-  return <>
-    <h1>This is Work Section</h1>
-  </>;
+  useEffect(() => {
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((element) => {
+      element.classList.add("fade-in-animation");
+    });
+  }, []);
+  
+  return (
+    <>
+      <Container fluid className="work">
+        <h1 className="fade-in">Coming Soon...</h1>
+      </Container>
+      <Footer />
+    </>
+  );
 }
 
 export default Work;

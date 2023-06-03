@@ -25,7 +25,8 @@
 }
 
 .navbar.scrolled {
-  background-color: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.9);
+  backdrop-filter: blur(50);
 }
 
 .nav-links {
@@ -40,13 +41,14 @@
 }
 
 .nav-links li a {
+  font-size: 0.9rem;
   color: #ffffff;
   text-decoration: none;
   padding: 5px;
 }
 
 .nav-links li a:hover {
-  color: #4d20ff;
+  color: #ff7e39;
 }
 
 .section {
@@ -68,11 +70,11 @@
 
 .name {
   text-decoration: none;
-  color: #4d20ff;
+  color: #ff7e39;
 }
 
 .name:hover {
-  color: aquamarine;
+  color: #ff6600;
 }
 
 .des-by a{
