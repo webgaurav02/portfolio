@@ -41,8 +41,8 @@ function About() {
         <h1 className="fade-in">I'm Gaurav.</h1>
         <h2 className="fade-in">
           Welcome to my portfolio website! I'm a{" "}
-          <a className="a-big fade-in">Student</a> at the National Institute of
-          Technology Meghalaya and a <a className="a-big fade-in">Web Developer.</a>
+          <span className="a-big fade-in">Student</span> at the National Institute of
+          Technology Meghalaya and a <span className="a-big fade-in">Web Developer.</span>
         </h2>
         <p className="fade-in">
           I rock at HTML, CSS, and JavaScript, and I'm not too shabby with
@@ -50,7 +50,7 @@ function About() {
         </p>
         <p className="fade-in">
           Oh, and did I mention I dabble in{" "}
-          <a className="a-big fade-in">graphic design</a> too?
+          <span className="a-big fade-in">graphic design</span> too?
         </p>
         <p className="fade-in">
           Take a peek at my portfolio and see the magic I can create with a mix
@@ -59,7 +59,7 @@ function About() {
         </p>
         <h1 className="code-logo fade-in">{disp}</h1>
       </Container>
-      <Footer />
+      <Footer section=""/>
     </>
   );
 }

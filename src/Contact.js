@@ -93,7 +93,7 @@ function Contact() {
         </div>
         <button type="submit">Submit</button>
       </form>
-      <Footer />
+      <Footer section=""/>
     </div> 
   );
 }

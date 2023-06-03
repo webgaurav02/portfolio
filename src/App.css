@@ -71,6 +71,8 @@
 }
 
 .name {
+  cursor: default;
+  display: inline;
   text-decoration: none;
   color: #ff7e39;
 }

@@ -3,8 +3,8 @@
   margin: 0;
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.80),
-      rgba(0, 0, 0, 0.80)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
     ),
     url(./images/wallpaperflare.com_wallpaper.jpg);
   background-color: black;
@@ -126,7 +126,6 @@ a {
   text-decoration: none;
 }
 
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -156,8 +155,6 @@ a {
     opacity: 1;
   }
 }
-
-
 
 .slide-in-left {
   animation: slide-in-left 1.5s ease-in-out;

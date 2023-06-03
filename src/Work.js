@@ -16,7 +16,7 @@ function Work() {
       <Container fluid className="work">
         <h1 className="fade-in">Coming Soon...</h1>
       </Container>
-      <Footer />
+      <Footer section=""/>
     </>
   );
 }

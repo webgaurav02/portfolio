@@ -50,7 +50,7 @@ function Content() {
       {show === "contact" ? <Contact /> : null}
 
       <p className="des-by">
-        Designed by <p className="name">Gaurav</p>
+        Designed by <span className="name">Gaurav</span>
       </p>
     </div>
   );

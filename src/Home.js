@@ -64,7 +64,7 @@ function Home() {
           </Row>
         </div>
       </Container>
-      <Footer />
+      <Footer section="footer-home"/>
     </>
   );
 }
