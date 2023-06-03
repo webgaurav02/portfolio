@@ -30,16 +30,16 @@ function Content() {
       <nav className={navbarClassName}>
         <ul className="nav-links fade-in">
           <li>
-            <a href="javascript:void(0);" onClick={() => handleNavClick("home")}>Home</a>
+            <p onClick={() => handleNavClick("home")}>Home</p>
           </li>
           <li>
-            <a href="javascript:void(0);" onClick={() => handleNavClick("about")}>About</a>
+            <p onClick={() => handleNavClick("about")}>About</p>
           </li>
           <li>
-            <a href="javascript:void(0);" onClick={() => handleNavClick("work")}>Work</a>
+            <p onClick={() => handleNavClick("work")}>Work</p>
           </li>
           <li>
-            <a href="javascript:void(0);" onClick={() => handleNavClick("contact")}>Contact</a>
+            <p onClick={() => handleNavClick("contact")}>Contact</p>
           </li>
         </ul>
       </nav>
@@ -50,7 +50,7 @@ function Content() {
       {show === "contact" ? <Contact /> : null}
 
       <p className="des-by">
-        Designed by <a className="name">Gaurav</a>
+        Designed by <p className="name">Gaurav</p>
       </p>
     </div>
   );

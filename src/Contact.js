@@ -1,35 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import Footer from "./Footer";
 
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform form submission logic
-    console.log(formData);
-    // Reset form after submission
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Perform form submission logic
+  //   console.log(formData);
+  //   // Reset form after submission
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     subject: "",
+  //     message: "",
+  //   });
+  // };
 
   useEffect(() => {
     const elements = document.querySelectorAll(".fade-in");
@@ -41,7 +41,7 @@ function Contact() {
   return (
     <div className="contact" id="contact">
       <h1 className="fade-in">Contact Me</h1>
-      <form className="fade-in" onSubmit={handleSubmit}>
+      <form className="fade-in" action="mailto:gauravcodes123@gmail.com" method="post" encType="text/plain" autoComplete="on">
         <div className="form-group">
           <label htmlFor="name"></label>
           <input
@@ -49,8 +49,8 @@ function Contact() {
             type="text"
             name="name"
             id="name"
-            value={formData.name}
-            onChange={handleChange}
+            // value={formData.name}
+            // onChange={handleChange}
             required
           />
         </div>
@@ -61,8 +61,8 @@ function Contact() {
             type="email"
             name="email"
             id="email"
-            value={formData.email}
-            onChange={handleChange}
+            // value={formData.email}
+            // onChange={handleChange}
             required
           />
         </div>
@@ -73,8 +73,9 @@ function Contact() {
             type="text"
             name="subject"
             id="subject"
-            value={formData.subject}
-            onChange={handleChange}
+            autoComplete="off"
+            // value={formData.subject}
+            // onChange={handleChange}
             required
           />
         </div>
@@ -85,8 +86,8 @@ function Contact() {
             name="message"
             id="message"
             rows="5"
-            value={formData.message}
-            onChange={handleChange}
+            // value={formData.message}
+            // onChange={handleChange}
             required
           ></textarea>
         </div>

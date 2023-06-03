@@ -40,14 +40,16 @@
   margin: 7px 40px;
 }
 
-.nav-links li a {
+.nav-links li p {
+  cursor: pointer;
+  margin-top: 0;
   font-size: 0.9rem;
   color: #ffffff;
   text-decoration: none;
   padding: 5px;
 }
 
-.nav-links li a:hover {
+.nav-links li p:hover {
   color: #ff7e39;
 }
 
