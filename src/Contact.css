@@ -65,3 +65,19 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #ff5900;
 }
+
+@media only screen and (max-width:991px){
+  .contact div{
+    padding: 3%;
+  }
+  
+  .contact h1{
+    margin-top: 70px;
+  }
+}
+
+button[type="submit"] {
+  margin: auto 3% 50px
+}
+
+

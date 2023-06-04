@@ -5,7 +5,8 @@
     padding-bottom: 1%;
     background-color: rgba(0, 0, 0, 0.581);
     color: white;
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 
 .foot-link {

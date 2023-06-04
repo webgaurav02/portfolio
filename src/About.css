@@ -25,28 +25,25 @@
   font-weight: 600;
 }
 
-
 .about h2 {
   font-weight: 200;
 }
 
 .about p {
-    color: white;
+  color: white;
   margin-top: 5rem;
   font-size: 1.2rem;
   font-weight: 240;
-  width: 40%;
   line-height: 2.5rem;
 }
 
 .a-big {
   display: inline;
-    text-decoration: none;
+  text-decoration: none;
   color: #ff7e39;
   font-size: 3rem;
   font-weight: 400;
   line-height: 4rem;
-
 }
 
 .a-big:hover {
@@ -54,12 +51,9 @@
 }
 
 h1.code-logo {
-    margin-right: 20px;
-    font-size: 400px;
-    font-weight: 500;
-    position: absolute;
-    bottom: 35vh;
-    right: 110px;
+  font-size: 400px;
+  font-weight: 500;
+  margin-top: 20%;
 }
 
 @keyframes gradient {
@@ -71,5 +65,34 @@ h1.code-logo {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+
+@media only screen and (max-width: 991px){
+  
+  .about {
+    padding-top: 30%;
+  }
+
+  .about h1 {
+    font-size: 5.8rem;
+    margin-bottom: 30px;
+  }
+
+  .about h2 {
+    line-height: 4rem;
+  }
+
+  .about p{
+    line-height: 3rem;
+  }
+
+  h1.code-logo {
+    font-size: 0;
+  }
+
+  .img-col{
+    height: 0;
   }
 }

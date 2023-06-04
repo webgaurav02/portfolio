@@ -15,9 +15,18 @@
   animation: gradient 6s ease infinite;
   color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .work h1 {
     pointer-events: none;
     margin: auto ;
+}
+
+@media only screen and (max-width: 991px){
+  .work h1{
+    line-height: 4rem;
+    margin: 30vh auto;
+    font-size: 3rem;
+  }
 }
