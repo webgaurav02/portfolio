@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
 }
 
 .name-line {
@@ -169,4 +170,74 @@ a {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    width: 100vw;
+    margin: 0;
+    padding: 2%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .head {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 0;
+    line-height: 3rem;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+
+  .name-line {
+    height: 0;
+    width: 0;
+    pointer-events: none; 
+  }
+
+  .head h1 {
+    font-size: 6.5rem;
+    pointer-events: none;
+    color: transparent;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #1378d7, #37a5dc);
+    background-size: 400% 400%;
+    background-clip: text;
+    animation: gradient 8s ease infinite;
+    margin: 30px auto 40px;
+  }
+
+  .head h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+
+  .head p {
+    font: 1rem;
+    margin: 15px auto;
+    font-weight: 350;
+    width: 75%;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-right: -40px;
+    margin-top: 60px;
+  }
+
+  .profile {
+    height: 0;
+    width: 0;
+  }
+
+  .profile-col {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
 }

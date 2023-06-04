@@ -54,7 +54,7 @@ function Home() {
                 </a>
               </div>
             </Col>
-            <Col>
+            <Col class="profile-col">
               {/* <img src={profilePhoto} alt="My Photo" className='profile'></img> */}
               <div
                 className="profile slide-in-left"
