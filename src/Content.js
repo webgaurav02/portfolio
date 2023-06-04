@@ -30,16 +30,20 @@ function Content() {
       <nav className={navbarClassName}>
         <ul className="nav-links fade-in">
           <li>
-            <p onClick={() => handleNavClick("home")}>Home</p>
+            <p className={show === "home" ? "active" : ""}
+            onClick={() => handleNavClick("home")}>Home</p>
           </li>
           <li>
-            <p onClick={() => handleNavClick("about")}>About</p>
+            <p className={show === "about" ? "active" : ""}
+             onClick={() => handleNavClick("about")}>About</p>
           </li>
           <li>
-            <p onClick={() => handleNavClick("work")}>Work</p>
+            <p className={show === "work" ? "active" : ""}
+             onClick={() => handleNavClick("work")}>Work</p>
           </li>
           <li>
-            <p onClick={() => handleNavClick("contact")}>Contact</p>
+            <p className={show === "contact" ? "active" : ""}
+            onClick={() => handleNavClick("contact")}>Contact</p>
           </li>
         </ul>
       </nav>

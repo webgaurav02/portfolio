@@ -38,6 +38,7 @@
 }
 
 .nav-links li {
+  position: relative;
   display: inline-block;
   margin: 7px 40px;
 }
@@ -49,6 +50,30 @@
   color: #ffffff;
   text-decoration: none;
   padding: 5px;
+}
+
+.nav-links li p.active {
+  color: #ff7e39;
+
+}
+
+.nav-links li p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff7e39;
+  transition: width 0.3s ease, 0.3s ease;
+}
+
+.nav-links li p.active::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+  transform: none;
 }
 
 .nav-links li p:hover {
@@ -106,9 +131,6 @@
     height: fit-content;
     width: fit-content;
     border-radius: 40px;
-  }
-
-  .navbar.scrolled {
     background: rgb(0, 0, 0, 0.6);
     color: white;
     backdrop-filter: blur(8px);
@@ -131,5 +153,9 @@
     color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
+  }
+
+  .nav-links li p::before {
+    height: 0.5px;
   }
 }
