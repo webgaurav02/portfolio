@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <Row>
-        <Col md={6}>
+        <Col lg={6}>
           <ul>
             <li className="foot-link">Elsewhere</li>
             <li>
