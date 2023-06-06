@@ -5,7 +5,6 @@ import Work from "./Work";
 import Contact from "./Contact";
 import "./App.css";
 
-
 function Content() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -30,20 +29,36 @@ function Content() {
       <nav className={navbarClassName}>
         <ul className="nav-links fade-in">
           <li>
-            <p className={show === "home" ? "active" : ""}
-            onClick={() => handleNavClick("home")}>Home</p>
+            <p
+              className={show === "home" ? "active" : ""}
+              onClick={() => handleNavClick("home")}
+            >
+              Home
+            </p>
           </li>
           <li>
-            <p className={show === "about" ? "active" : ""}
-             onClick={() => handleNavClick("about")}>About</p>
+            <p
+              className={show === "about" ? "active" : ""}
+              onClick={() => handleNavClick("about")}
+            >
+              About
+            </p>
           </li>
           <li>
-            <p className={show === "work" ? "active" : ""}
-             onClick={() => handleNavClick("work")}>Work</p>
+            <p
+              className={show === "work" ? "active" : ""}
+              onClick={() => handleNavClick("work")}
+            >
+              Work
+            </p>
           </li>
           <li>
-            <p className={show === "contact" ? "active" : ""}
-            onClick={() => handleNavClick("contact")}>Contact</p>
+            <p
+              className={show === "contact" ? "active" : ""}
+              onClick={() => handleNavClick("contact")}
+            >
+              Contact
+            </p>
           </li>
         </ul>
       </nav>
@@ -53,9 +68,11 @@ function Content() {
       {show === "work" ? <Work /> : null}
       {show === "contact" ? <Contact /> : null}
 
-      <p className="des-by">
-        Designed by <span className="name">Gaurav</span>
-      </p>
+      <div className="des-credits">
+        <p className="des-by">
+          Designed by <span className="name">Gaurav</span>
+        </p>
+      </div>
     </div>
   );
 }

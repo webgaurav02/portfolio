@@ -159,4 +159,14 @@
   .nav-links li p::before {
     height: 0.5px;
   }
+
+  .des-by {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 3px;
+    background-color: black;
+  }
 }
