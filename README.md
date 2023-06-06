@@ -49,8 +49,6 @@ The portfolio website is built using the following technologies:
 
 - The `public` directory contains the static assets and the main HTML file.
 - The `src` directory contains the source code for the React components, stylesheets, and main application files.
-- The `components` directory includes individual React components that make up different sections of the website.
-- The `styles` directory contains CSS files for styling the components.
 - The `App.js` file is the entry point of the React application.
 - The `index.js` file is responsible for rendering the React components into the HTML document.
 
@@ -64,6 +62,6 @@ The contents of this repository are licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or inquiries, please feel free to contact me at [gauravcodes123@gmail.com](mailto:your-email@example.com).
+If you have any questions or inquiries, please feel free to contact me at [gauravcodes123@gmail.com](mailto:gauravcodes123@gmail.com).
 
 Thank you for visiting my portfolio repository!
