@@ -1,6 +1,6 @@
 import React from 'react';
 import { ClimbingBoxLoader } from 'react-spinners';
-import "./LoadingScreen.css"
+import "../styles/LoadingScreen.css"
 
 const LoadingScreen = () => {
   return (

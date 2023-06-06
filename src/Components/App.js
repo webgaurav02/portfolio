@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "./LoadingScreen";
-import "./App.css";
+import "../styles/App.css";
 import Content from "./Content";
 
 function App(){

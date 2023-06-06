@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Work.css";
+import "../styles/Work.css";
 import Container from "react-bootstrap/Container";
 import Footer from "./Footer"
 

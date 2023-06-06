@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./About.css";
+import "../styles/About.css";
 import Container from "react-bootstrap/Container";
 import Footer from "./Footer";
 import { Row } from "react-bootstrap";

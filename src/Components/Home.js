@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import "./Home.css"
+import "../styles/Home.css"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import profilePhoto from "./images/Gaurav_3.png";
+import profilePhoto from "../images/Gaurav_3.png";
 import Footer from "./Footer";
 
 function Home() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../styles/Footer.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 

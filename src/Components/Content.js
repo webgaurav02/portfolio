@@ -3,7 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Work from "./Work";
 import Contact from "./Contact";
-import "./App.css";
+import "../styles/App.css";
 
 function Content() {
   const [scrolled, setScrolled] = useState(false);

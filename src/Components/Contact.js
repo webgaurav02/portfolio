@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Contact.css";
+import "../styles/Contact.css";
 import Footer from "./Footer";
 
 
