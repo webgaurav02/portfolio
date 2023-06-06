@@ -69,6 +69,7 @@ h1 {
   font-size: 7rem;
   line-height: 0.9;
   z-index: 0;
+  
 }
 
 h1:hover {
@@ -175,6 +176,7 @@ a {
 @media only screen and (max-width: 991px) {
   .home {
     width: 100vw;
+    min-height: 800px;
     margin: 0;
     padding: 2%;
     justify-content: center;

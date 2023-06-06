@@ -132,9 +132,14 @@
     height: fit-content;
     width: fit-content;
     border-radius: 40px;
-    background: rgb(0, 0, 0, 0.6);
+    background: rgba(74, 74, 74, 0.1);
     color: white;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar.scrolled {
+    background: rgba(74, 74, 74, 0.1);
+    backdrop-filter: blur(5px);
   }
 
   .nav-links {
@@ -161,6 +166,7 @@
   }
 
   .des-by {
+    z-index: 10;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
