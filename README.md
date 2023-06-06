@@ -62,6 +62,6 @@ The contents of this repository are licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or inquiries, please feel free to contact me at [gauravcodes123@gmail.com](mailto:your-email@example.com).
+If you have any questions or inquiries, please feel free to contact me at [gauravcodes123@gmail.com](mailto:gauravcodes123@gmail.com).
 
 Thank you for visiting my portfolio repository!
