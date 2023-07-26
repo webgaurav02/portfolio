@@ -35,6 +35,7 @@ function Contact() {
           <Col className="form-col">
             <h2>Write me a message</h2>
             <form
+              netlify
               className="fade-in"
               name="Contact"
               method="POST"
