@@ -71,9 +71,9 @@ function Contact() {
                   rows="1"
                   name="message"
                   id="message"
-                  required
                   value={message}
                   onChange={handleMessageChange}
+                  required
                 ></textarea>
               </div>
               <button type="submit">Submit</button>

@@ -78,6 +78,10 @@ a.contact-mail:hover{
   color: #ff5900;
 }
 
+.contact-text{
+  line-height: 2rem;
+}
+
 .form-col{
   padding: 0;
 }
