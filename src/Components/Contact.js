@@ -37,7 +37,8 @@ function Contact() {
             <form
               className="fade-in"
               name="contact"
-              method="POST"
+              method="post"
+              action="/contact"
               data-netlify="true"
               onSubmit="submit"
               encType="text/plain"
