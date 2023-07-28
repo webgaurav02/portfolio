@@ -44,6 +44,7 @@ function Contact() {
               encType="text/plain"
               autoComplete="on"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <label htmlFor="name"></label>
                 <input
