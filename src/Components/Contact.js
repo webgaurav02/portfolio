@@ -38,7 +38,6 @@ function Contact() {
               className="fade-in"
               name="contact"
               method="post"
-              action="/contact"
               data-netlify="true"
               onSubmit="submit"
               encType="text/plain"
