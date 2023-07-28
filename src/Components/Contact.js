@@ -39,6 +39,7 @@ function Contact() {
               name="contact"
               method="post"
               data-netlify="true"
+              netlify-honeypot="bot-field"
               onSubmit="submit"
               encType="text/plain"
               autoComplete="on"
