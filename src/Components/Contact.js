@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import "../styles/Contact.css";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
@@ -28,6 +29,19 @@ function Contact() {
     }
   };
 
+  // Formspree
+  const [state, handleSubmit] = useForm("meqyqqrb");
+  if (state.succeeded) {
+    return (
+      <div className="contact">
+        <div className="form-submitted">
+          <p>Thanks for contacting! I'll get back to you soon.</p>
+        </div>
+        <Footer section="" />
+      </div>
+    );
+  }
+
   return (
     <div id="contact">
       <div className="contact">
@@ -37,10 +51,8 @@ function Contact() {
             <form
               className="fade-in"
               name="contact"
-              method="post"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              onSubmit="submit"
+              // method="post"
+              onSubmit={handleSubmit}
               encType="text/plain"
               autoComplete="on"
             >
@@ -54,6 +66,11 @@ function Contact() {
                   id="name"
                   required
                 />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
               </div>
               <div className="form-group">
                 <label htmlFor="email"></label>
@@ -63,6 +80,11 @@ function Contact() {
                   name="email"
                   id="email"
                   required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div className="form-group">
@@ -77,8 +99,13 @@ function Contact() {
                   onChange={handleMessageChange}
                   required
                 ></textarea>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" disabled={state.submitting}>Submit</button>
             </form>
             <div className="contact-mail">
               <h2 className="contact-mail">Or just mail me</h2>
@@ -97,7 +124,10 @@ function Contact() {
             <p>Feel free to reach out and I'll get back to you promptly.</p>
             <br />
             <br />
-            <p>Whether you have a specific project in mind or just want to discuss potential opportunities, I'm here to help.</p>
+            <p>
+              Whether you have a specific project in mind or just want to
+              discuss potential opportunities, I'm here to help.
+            </p>
             <br />
             <br />
             <p>
