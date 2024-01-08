@@ -1,0 +1,52 @@
+.client-card{
+    margin: 3% 0;
+    padding: 5%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.client-card h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.client-card p{
+    font-size: 1rem;
+}
+
+.live-button, .github-button{
+    margin: 3% 0;
+    padding: 2% 5%;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.live-button a, .github-button a{
+    color: white;
+    text-decoration: none;
+}
+
+.live-button{
+    background-color: brown;
+}
+.github-button{
+    background-color: white;
+    margin-left: 10px;
+}
+.github-button a{
+    color: black;
+}
+
+.client-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.client-img{
+    width: 100%;
+}
