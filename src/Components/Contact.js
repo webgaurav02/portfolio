@@ -30,7 +30,17 @@ function Contact() {
   };
 
   // Formspree
+  const loaderSc = () => {
+    return (
+      <div className="submit-loading">
+        <span className="loader"></span>
+      </div>
+    )
+  }
+
+
   const [state, handleSubmit] = useForm("meqyqqrb");
+
   if (state.succeeded) {
     return (
       <div className="contact">
@@ -48,8 +58,9 @@ function Contact() {
         <Row className="fade-in">
           <Col className="form-col">
             <h2>Write me a message</h2>
+            {state.submitting && loaderSc()}
             <form
-              className="fade-in"
+              className={`fade-in ${state.submitting ? 'submitting' : ''}`}
               name="contact"
               // method="post"
               onSubmit={handleSubmit}
@@ -105,16 +116,12 @@ function Contact() {
                   errors={state.errors}
                 />
               </div>
-              <button type="submit" disabled={state.submitting}>Submit</button>
+              <button type="submit" disabled={state.submitting} onSubmit={loaderSc}>Submit</button>
             </form>
             <div className="contact-mail">
-              <h2 className="contact-mail">Or just mail me</h2>
-              <a
-                className="contact-mail"
-                href="mailto:gauravcodes123@gmail.com"
-              >
-                gauravcodes123@gmail.com
-              </a>
+              <p><i className="fa-solid fa-location-dot"></i> Shillong, Meghalaya, India</p>
+              <p><i className="fa-solid fa-graduation-cap"></i> National Institute of Technology Meghalaya</p>
+              <p><i className="fa-solid fa-envelope"></i> gauravcodes123@gmail.com</p>
             </div>
           </Col>
           <Col className="contact-text" lg={6}>

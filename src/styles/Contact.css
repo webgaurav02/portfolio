@@ -1,4 +1,55 @@
+/* Loader */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+    content: '';  
+  box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: #FF3D00;
+}
+
+.submit-loading{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitting{
+  display: none;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+
+
+
 .contact {
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   padding-top: 7%;
@@ -68,21 +119,24 @@ h2.contact-mail {
 
 }
 
-a.contact-mail {
-  font-weight: 600;
-  font-size: 2.4rem;
-  color: #ff7429;
+.contact-mail p{
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
-a.contact-mail:hover {
-  color: #ff5900;
-}
 
 .contact-text {
   line-height: 2rem;
 }
 
+.contact-text p{
+  font-size: 1.1rem;
+}
+
 .form-col {
+  display: flex;
+  flex-direction: column;
+
   padding: 0;
 }
 
@@ -90,6 +144,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   margin-left: 20%;
   margin-top: 3%;
@@ -174,7 +229,7 @@ button[type="submit"]:hover {
   }
 
   .contact h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -182,10 +237,9 @@ button[type="submit"]:hover {
     font-size: 1.2rem;
   }
 
-  a.contact-mail {
-    margin: auto;
-    font-size: 1.5rem;
-
+  .contact-mail p{
+    font-size: 1rem;
+    margin-left: 5%;
   }
 
   .contact-mail {
@@ -193,8 +247,13 @@ button[type="submit"]:hover {
     line-height: 3rem;
   }
 
+
   .form-group {
     margin-bottom: 0px;
+  }
+
+  .form-group input, .form-group textarea{
+    font-size: 0.9rem;
   }
 
   .contact h2 {
@@ -204,7 +263,7 @@ button[type="submit"]:hover {
   form {
     margin: auto;
     margin-top: 5%;
-    padding: 5%;
+    padding: 10%;
   }
 
   .form-col {
@@ -214,6 +273,11 @@ button[type="submit"]:hover {
 
   .contact-text {
     margin-bottom: 10%;
+  }
+
+  .contact-text p{
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 
