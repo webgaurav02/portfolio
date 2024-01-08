@@ -1,3 +1,7 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
+
 .App {
   text-align: center;
   padding: 0;
@@ -65,7 +69,6 @@
   height: 1px;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
   background-color: #ff7e39;
   transition: width 0.3s ease, 0.3s ease;
 }
