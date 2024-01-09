@@ -43,12 +43,14 @@ function Contact() {
 
   if (state.succeeded) {
     return (
-      <div className="contact">
-        <div className="form-submitted">
-          <p>Thanks for contacting! I'll get back to you soon.</p>
+      <>
+        <div className="contact">
+          <div className="form-submitted">
+            <p>Thanks for contacting! I'll get back to you soon.</p>
+          </div>
         </div>
         <Footer section="" />
-      </div>
+      </>
     );
   }
 

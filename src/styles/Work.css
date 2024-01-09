@@ -24,9 +24,11 @@
 
 
 @media only screen and (max-width: 991px){
-  .work h1{
-    line-height: 4rem;
-    margin: 30vh auto;
+
+
+  .work h3{
+    text-align: center;
+    margin: 30% 0 8%;
     font-size: 3rem;
   }
 }

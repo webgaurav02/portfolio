@@ -6,7 +6,7 @@ const ProjectItem = (props) => {
         <>
             <Col md={6}>
                 <Row className="client-card">
-                    <Col xs={9}>
+                    <Col md={9}>
                         <h4> {props.title} </h4>
                         <p> {props.description} </p>
                         <div>
@@ -16,7 +16,7 @@ const ProjectItem = (props) => {
                             {props.github && <div className="github-button"> <a href={props.link} target="_blank" rel="noreferrer"> Github </a> </div>}
                         </div>
                     </Col>
-                    <Col xs={3} className="client-img-container">
+                    <Col md={3} className="client-img-container">
                         <img className="client-img" src={props.image} alt="Client Logo" />
                     </Col>
                 </Row>

@@ -50,3 +50,24 @@
 .client-img{
     width: 100%;
 }
+
+@media only screen and (max-width: 991px){
+    .client-card{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 10%;
+    }
+
+    .client-img{
+        width: 50%;
+    }
+
+    .client-card h4{
+        margin-top: 10%;
+    }
+
+    .client-card p{
+        margin-top: 5%;
+    }
+    
+}
