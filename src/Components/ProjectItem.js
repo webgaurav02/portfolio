@@ -11,7 +11,7 @@ const ProjectItem = (props) => {
                         <p> {props.description} </p>
                         <div>
                             <a  href={props.link} target="_blank" rel="noreferrer" className="live-button">
-                                <span> <i class="fa-solid fa-eye"></i> View live </span>
+                                <span> <i class="fa-solid fa-eye"></i> View </span>
                             </a>
                             {props.github && <a  href={props.github} target="_blank" rel="noreferrer" className="github-button"> <span> <i class="fa-brands fa-github"></i> Github </span> </a>}
                         </div>
