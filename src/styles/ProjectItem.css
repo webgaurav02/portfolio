@@ -8,9 +8,11 @@
 .client-card h4{
     font-size: 1.5rem;
     font-weight: 700;
+    margin-top: 3%;
 }
 
 .client-card p{
+    margin: 10% 0 5%;
     font-size: 1rem;
 }
 
@@ -23,20 +25,19 @@
     border-radius: 2px;
 }
 
-.live-button a, .github-button a{
-    color: white;
+a.live-button, a.github-button{
     text-decoration: none;
 }
 
-.live-button{
+
+.live-button, .live-button:hover{
+    color: white;
     background-color: brown;
 }
-.github-button{
+.github-button, .github-button:hover{
+    color: black;
     background-color: white;
     margin-left: 10px;
-}
-.github-button a{
-    color: black;
 }
 
 .client-img-container{

@@ -10,10 +10,10 @@ const ProjectItem = (props) => {
                         <h4> {props.title} </h4>
                         <p> {props.description} </p>
                         <div>
-                            <div className="live-button">
-                                <a href={props.link} target="_blank" rel="noreferrer" > View live </a>
-                            </div>
-                            {props.github && <div className="github-button"> <a href={props.link} target="_blank" rel="noreferrer"> Github </a> </div>}
+                            <a  href={props.link} target="_blank" rel="noreferrer" className="live-button">
+                                <span> <i class="fa-solid fa-eye"></i> View live </span>
+                            </a>
+                            {props.github && <a  href={props.github} target="_blank" rel="noreferrer" className="github-button"> <span> <i class="fa-brands fa-github"></i> Github </span> </a>}
                         </div>
                     </Col>
                     <Col md={3} className="client-img-container">
