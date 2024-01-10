@@ -12,7 +12,7 @@
             "title": "NewsQuik",
             "description": "A News website I made and use everyday to keep me informed on global updates",
             "image": "https://www.pikpng.com/pngl/b/182-1827833_news-logo-png-logo-news-clipart.png",
-            "link": "https://news-quik.vercel.app/",
+            "link": "https://newsquik.vercel.app/",
             "github": "https://github.com/webgaurav02/NewsQuik"
         },
         {
@@ -26,7 +26,7 @@
             "title": "TextUtils: Online Text Tool",
             "description": "Simple yet powerful online Text Utilities Tool with Dark Mode Toggle functionality.",
             "image": "https://png2.cleanpng.com/sh/7a762de519500c90229ffa6efcc008e0/L0KzQYm3VcAyN6tnj5H0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgN6dZN0hJ98bXHvfH7tkvV0cF51fdC2NXHoSIG4UsQzPJQ1fKo3MEi8RoGBVccyPWM6Sac9MEi3QYa3Vb5xdpg=/kisspng-computer-icons-symbol-small-fresh-pen-5ae8012424c0d8.0896085715251540841505.png",
-            "link": "https://text-utils-gaurav.vercel.app/",
+            "link": "https://textutils-gaurav.vercel.app/",
             "github": "https://github.com/webgaurav02/textUtils"
         }
     ]
