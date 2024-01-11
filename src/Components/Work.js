@@ -22,6 +22,7 @@ function Work() {
           {WorkData.clients.map(ele => {
             return (
                 <ProjectItem
+                  key={ele.key}
                   title={ele.title}
                   description={ele.description}
                   image={ele.image}
@@ -36,6 +37,7 @@ function Work() {
           {WorkData.projects.map(ele => {
             return (
                 <ProjectItem
+                  key={ele.key}
                   title={ele.title}
                   description={ele.description}
                   image={ele.image}

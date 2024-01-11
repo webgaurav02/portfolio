@@ -1,6 +1,7 @@
 {
     "clients": [
         {
+            "key": "w-1",
             "title": "Educine Academy Pvt. Ltd",
             "description": "A Coaching institute based in New Delhi, India for specialized coaching in Sainik School, RMS, RIMC, JNV, and board exams.",
             "image": "https://educineacademy.in/media/logo.webp",
@@ -9,6 +10,7 @@
     ],
     "projects": [
         {
+            "key": "p-1",
             "title": "NewsQuik",
             "description": "A News website I made and use everyday to keep me informed on global updates",
             "image": "https://www.pikpng.com/pngl/b/182-1827833_news-logo-png-logo-news-clipart.png",
@@ -16,6 +18,7 @@
             "github": "https://github.com/webgaurav02/NewsQuik"
         },
         {
+            "key": "p-2",
             "title": "Tic Tac Toe Game",
             "description": "A fun and engaging Tic Tac Toe game built using HTML, CSS, and JavaScript.",
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Tic_tac_toe.svg",
@@ -23,6 +26,7 @@
             "github": "https://github.com/webgaurav02/Tic-Tac-Toe"
         },
         {
+            "key": "p-3",
             "title": "TextUtils: Online Text Tool",
             "description": "Simple yet powerful online Text Utilities Tool with Dark Mode Toggle functionality.",
             "image": "https://png2.cleanpng.com/sh/7a762de519500c90229ffa6efcc008e0/L0KzQYm3VcAyN6tnj5H0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgN6dZN0hJ98bXHvfH7tkvV0cF51fdC2NXHoSIG4UsQzPJQ1fKo3MEi8RoGBVccyPWM6Sac9MEi3QYa3Vb5xdpg=/kisspng-computer-icons-symbol-small-fresh-pen-5ae8012424c0d8.0896085715251540841505.png",
