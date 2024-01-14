@@ -1,12 +1,13 @@
 .client-card{
-    margin: 3% 0;
+    min-height: 85%;
+    margin: 5% 0;
     padding: 5%;
     border: 1px solid white;
     border-radius: 10px;
 }
 
 .client-card h4{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-top: 3%;
 }
@@ -64,11 +65,17 @@ a.live-button, a.github-button{
     }
 
     .client-card h4{
+        text-align: center;
         margin-top: 10%;
     }
 
     .client-card p{
+        text-align: center;
         margin-top: 5%;
+    }
+
+    .work-links{
+        text-align: center;
     }
     
 }

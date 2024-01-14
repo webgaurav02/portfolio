@@ -9,7 +9,7 @@ const ProjectItem = (props) => {
                     <Col md={9}>
                         <h4> {props.title} </h4>
                         <p> {props.description} </p>
-                        <div>
+                        <div className="work-links">
                             <a  href={props.link} target="_blank" rel="noreferrer" className="live-button">
                                 <span> <i className="fa-solid fa-eye"></i> View </span>
                             </a>
