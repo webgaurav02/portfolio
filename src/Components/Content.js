@@ -21,6 +21,7 @@ function Content() {
 
   const [show, setShow] = useState("home");
   function handleNavClick(section) {
+    window.scrollTo({ top: 0, left: 0 });
     setShow(section);
   }
 
