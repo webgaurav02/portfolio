@@ -2,6 +2,13 @@
     "recent": [
         {
             "key": "r-1",
+            "title": "Onlybees Events",
+            "description": "An event booking portal I developed which simplifies event planning for ticketing and guest management.",
+            "image": "https://event.onlybees.in/_next/static/media/BeesLogoBg.4731db90.png",
+            "link": "https://event.onlybees.in/hoot"
+        },
+        {
+            "key": "r-2",
             "title": "Shishir - NITM",
             "description": "The Annual Cultural Festival of NIT Meghalaya",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl9GrQAfpOSVPyiy9fEwF7JNcj3amAUrvDtgiS_IvNOw&s",
