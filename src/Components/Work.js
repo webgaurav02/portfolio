@@ -17,6 +17,21 @@ function Work() {
   return (
     <>
       <Container fluid className="work">
+        <h3 className="fade-in">My Recent Projects</h3>
+        <Row className="fade-in">
+          {WorkData.recent.map(ele => {
+            return (
+                <ProjectItem
+                  key={ele.key}
+                  title={ele.title}
+                  description={ele.description}
+                  image={ele.image}
+                  link={ele.link}
+                  github={ele.github}
+                />
+            );
+          })}
+        </Row>
         <h3 className="fade-in">Clients</h3>
         <Row className="fade-in">
           {WorkData.clients.map(ele => {
