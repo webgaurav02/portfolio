@@ -32,7 +32,7 @@ function Work() {
             );
           })}
         </Row>
-        <h3 className="fade-in">Clients</h3>
+        {/* <h3 className="fade-in">Clients</h3>
         <Row className="fade-in">
           {WorkData.clients.map(ele => {
             return (
@@ -46,7 +46,7 @@ function Work() {
                 />
             );
           })}
-        </Row>
+        </Row> */}
         <h3 className="fade-in">Fun</h3>
         <Row className="fade-in">
           {WorkData.projects.map(ele => {

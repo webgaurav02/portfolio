@@ -2,27 +2,32 @@
     "recent": [
         {
             "key": "r-1",
-            "title": "Onlybees Events",
-            "description": "An event booking portal I developed which simplifies event planning for ticketing and guest management.",
-            "image": "https://event.onlybees.in/BeesLogoBg.png",
-            "link": "https://event.onlybees.in/kilometrezero"
+            "title": "Durand Cup 2024",
+            "description": "Developed the official Durand Cup Shillong 2024 ticketing system, handling 10,000+ ticket sales with advanced seat selection, automated QR code generation, and secure payment processing.",
+            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Durand_Cup.svg/1200px-Durand_Cup.svg.png",
+            "link": "https://onlybees.in/durand-cup/tickets/aug-26"
         },
         {
             "key": "r-2",
+            "title": "Onlybees",
+            "description": "An event booking portal I developed which simplifies event planning for ticketing and guest management.",
+            "image": "https://onlybees.in/bees-circle-white.png",
+            "link": "https://onlybees.in/"
+        },
+        {
+            "key": "r-3",
+            "title": "The Yeastern Civilization",
+            "description": "Developed an online table reservation system for restaurants, featuring seamless booking, payment integration, and custom table assignments.",
+            "image": "https://tycindia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_2_white.70a2e367.png&w=640&q=75",
+            "link": "https://tycindia.com/"
+        },
+        {
+            "key": "r-4",
             "title": "Shishir - NITM",
-            "description": "The Annual Cultural Festival of NIT Meghalaya",
+            "description": "Lead developer for Shishir 2k24, NIT Meghalaya's annual cultural festival website, implementing scalable solutions and collaborating cross-functionally using Next.js and Figma.",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl9GrQAfpOSVPyiy9fEwF7JNcj3amAUrvDtgiS_IvNOw&s",
             "link": "https://shishir.nitm.ac.in/",
             "github": "https://github.com/shishirnitm/Shishir-2k24-Web"
-        }
-    ],
-    "clients": [
-        {
-            "key": "w-1",
-            "title": "Educine Academy Pvt. Ltd",
-            "description": "A Coaching institute based in New Delhi, India for specialized coaching in Sainik School, RMS, RIMC, JNV, and board exams",
-            "image": "https://educineacademy.in/media/logo.webp",
-            "link": "https://educineacademy.in/"
         }
     ],
     "projects": [

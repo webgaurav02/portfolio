@@ -51,8 +51,7 @@ function About() {
           <Row>
             <Col lg={6}>
               <p className="fade-in">
-                I rock at HTML, CSS, and JavaScript, and I'm not too shabby with
-                React.js either.
+                I've built some cool stuff like the Durand Cup 2024 ticketing system and the Onlybees event platform, mixing creativity and cutting-edge tech like <span className="a-big fade-in">React, Next.js</span> and <span className="a-big fade-in">MongoDB</span>.
               </p>
               <p className="fade-in">
                 Oh, and did I mention I dabble in{" "}
